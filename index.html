@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Joguinho Dino</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+  <div id="game">
+     <div id="player-name"></div>
+    <img id="player" src="personagem.png" alt="Personagem" />
+    <div id="obstacle"></div>
+    <div id="ground"></div>
+  </div>
+  <div id="startModal" class="modal">
+  <div class="modal-content">
+    <h2>Pixel-Game Para Namoradinha</h2>
+    <img src="personagem.png" alt="Personagem" class="modal-character" />
+    <input type="text" id="playerNameInput" placeholder="Digite seu nome" />
+    <button id="startButton">Começar Jogo</button>
+  </div>
+</div>
+
+<div id="score">Pontos: 0</div>
+
+<div id="gameOverModal" class="modal">
+  <div class="modal-content">
+    <h2>💀 Game Over!</h2>
+    <p id="gameOverMessage"></p>
+    <button id="restartButton">Recomeçar</button>
+  </div>
+</div>
+
+  <script src="script.js"></script>
+  <audio id="bgMusic" src="audio.wav" loop></audio>
+
+</body>
+</html>
