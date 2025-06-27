@@ -1,7 +1,7 @@
 body {
   margin: 0;
   font-family: sans-serif;
-  height: 100vh;
+   min-height: 100vh;
   overflow: hidden;
   background: url('ceu.png') no-repeat center center fixed;
   background-size: cover;
@@ -159,7 +159,7 @@ button {
 }
 
 #score {
-  position: absolute;
+  position: fixed;
   top: 20px;
   left: 20px;
   background-color: rgba(0, 0, 0, 0.6);
