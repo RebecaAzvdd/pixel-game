@@ -5,6 +5,8 @@ body {
   overflow: hidden;
   background: url('ceu.png') no-repeat center center fixed;
   background-size: cover;
+    overscroll-behavior: none;
+  touch-action: manipulation;
 }
 
 #game {
@@ -119,11 +121,17 @@ body {
   cursor: pointer;
   box-shadow: 4px 4px 0 #1a1a1a;
   transition: transform 0.1s ease-in-out;
+    touch-action: manipulation
 }
 
 #startButton:hover,
 #restartButton:hover {
   background-color: #388E3C;
+}
+
+button {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
 }
 
 #startButton:active,
@@ -160,7 +168,7 @@ body {
   font-size: 20px;
   padding: 10px 15px;
   box-shadow: 4px 4px 0 #1a1a1a;
-  z-index: 1000;
+    z-index: 9999;
   text-transform: uppercase;
 }
 

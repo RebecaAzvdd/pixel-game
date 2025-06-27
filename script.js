@@ -20,6 +20,7 @@ let jogoAtivo = false;
 function iniciarJogo() {
   jogoAtivo = true;
   score = 0;
+  scoreDisplay.style.display = "block";
   scoreDisplay.innerText = "Pontos: 0";
 
   // Aumenta o score a cada 100ms
@@ -125,3 +126,5 @@ document.addEventListener("touchstart", () => {
     }, 400);
   }
 });
+
+
